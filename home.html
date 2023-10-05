@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Nautilus</title>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <div class="nada"></div>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="login">
+                <button>Iniciar Sesion</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="room.html" class="nav-item nav-link">Rooms</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="buscador">
+            <h1>Reserva de Hotel</h1>
+            <form action="#">
+                <div class="fechas">
+                    <label for="check-in">Desde:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="fechas">
+                    <label for="check-out">Hasta:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="informacion">
+                    <div class="habitacion">
+                        <label for="tipo-habitacion">Tipo de Habitación:</label>
+                        <select id="tipo-habitacion" name="tipo-habitacion" required>
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="simple">Simple</option>
+                            <option value="doble">Doble</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                    </div>
+                    <div class="personas">
+                        <label for="cantidad-personas">Cantidad de Personas:</label>
+                        <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" required>
+                    </div>
+                </div>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Acerca de</p>
+    </footer>
+</body>
+</html>
