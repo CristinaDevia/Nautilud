@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("image/Fondo-home.jpeg");
+    background-image: url("/image/Fondo-home.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
