@@ -1,0 +1,242 @@
+:root {
+    --primary: #FEA116;
+}
+
+body {
+    background-color: rgba(240,240,232,255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(240,240,232,255);
+    background-color: #2b2823;
+}
+
+/*-----------menu------------*/
+.menu {
+    width: 33%;
+    display: flex;
+}
+
+.panel-menu {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #cc3917;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: rgba(173,195,206,255);
+}
+
+.panel-menu a {
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(240,240,232,255);
+    display: block;
+    transition: 0.3s;
+}
+
+.panel-menu a:hover {
+    background-color: rgba(173,195,206,255);
+}
+
+.boton-menu {
+    background-color: transparent;
+    color: rgba(240,240,232,255);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.boton-menu:hover {
+    background-color: #cc3917;
+}
+
+.boton-menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.boton-menu:focus + .panel-menu {
+    width: 250px;
+}
+
+/*------------fin menu-----------*/
+
+.logo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+/*------------boton para ir al login-----------*/
+
+.login{
+    width: 33%;
+    display: flex;
+    justify-content: end;
+}
+
+.login button {
+    background-color: transparent;
+    color: rgba(240,240,232,255);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.login button:hover {
+    background-color: #cc3917;
+}
+
+/*------------fin login-----------*/
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+ /*------------buscador-----------*/
+.buscador {
+    background-color: rgba(240,240,232,255);
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #cc3917;
+    border-radius: 32px;
+    font-size: 16px;
+}
+
+.form-buscador {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fecha-desde, .fecha-hasta, .habitacion,.personas {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(46, 46, 46);
+    border-radius: 32px;
+    padding-left: 15px;
+}
+
+.fecha-desde:hover, .fecha-hasta:hover, .habitacion:hover,.personas:hover{
+    background-color: #f4f4f4;
+ }
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    color: grey;
+}
+
+.boton-buscador {
+    background-color: #cc3917;
+    width: 50px;
+    height: 49px;
+    border-radius:100%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-buscador img {
+    width: 20px;
+    height: 20px;
+}
+
+.boton-buscador button {
+    background-color: transparent;
+    border: none;
+}
+
+/*------------fin buscador-----------*/
+
+/*------------carrusel-----------*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+#carrusel {
+    width: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-carrusel {
+    min-width: 1000px;
+    min-height: 750px;
+}
+
+.imagen-carrusel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#circulitos {
+    position: relative;
+    bottom: 30px;
+}
+
+.circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/*------------fin carrusel-----------*/
