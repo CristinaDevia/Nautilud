@@ -180,6 +180,7 @@ input, select {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .boton-buscador img {
@@ -190,6 +191,7 @@ input, select {
 .boton-buscador button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 /*------------fin buscador-----------*/

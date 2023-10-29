@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("/image/Fondo-home.jpeg");
+    background-color: rgba(240,240,232,255);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -18,20 +18,78 @@ header {
 
 .barra {
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 60%);
+    color: rgba(240,240,232,255);
+    background-color: #2b2823;
 }
 
-.nada {
+/*-----------menu------------*/
+.menu {
     width: 33%;
+    display: flex;
 }
+
+.panel-menu {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #cc3917;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: rgba(173,195,206,255);
+}
+
+.panel-menu a {
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(240,240,232,255);
+    display: block;
+    transition: 0.3s;
+}
+
+.panel-menu a:hover {
+    background-color: rgba(173,195,206,255);
+}
+
+.boton-menu {
+    background-color: transparent;
+    color: rgba(240,240,232,255);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.boton-menu:hover {
+    background-color: #cc3917;
+}
+
+.boton-menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.boton-menu:focus + .panel-menu {
+    width: 250px;
+}
+
+/*------------fin menu-----------*/
 
 .logo {
     width: 33%;
     display: flex;
     justify-content: center;
 }
+
+/*------------boton para ir al login-----------*/
 
 .login{
     width: 33%;
@@ -41,8 +99,8 @@ header {
 
 .login button {
     background-color: transparent;
-    color: #fff;
-    border: 3px solid white;
+    color: rgba(240,240,232,255);
+    border: none;
     border-radius: 3px;
     padding: 10px;
     font-size: 16px;
@@ -50,53 +108,14 @@ header {
     margin: 0;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.login button:hover {
+    background-color: #cc3917;
 }
 
-.navbar-nav .nav-link {
-    margin: 0 15px;
-    color: #FFFFFF;
-    font-size: 15px;
-    text-transform: uppercase;
-    outline: none;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: var(--primary);
-}
-
-.navbar {
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-}
-
-.navbar-nav .nav-link,
-.navbar-nav .dropdown {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    position: static;
-    display: none;
-}
-
-.nav-item:hover .dropdown-menu {
-    display: block;
-}
-
+/*------------fin login-----------*/
 
 .container {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: #d4ceaa;
     width: 80%;
     height: auto;
     display: grid;
@@ -108,7 +127,7 @@ header {
 .page-title {
     text-align: center;
     padding: 20px 0;
-    color: var(--primary);
+    color: #cc3917;
 }
 
 .room-item {
