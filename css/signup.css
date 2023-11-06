@@ -1,13 +1,82 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgba(240,240,232,255);
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
+    height: 100vh;
+}
+
+.barra{
+    padding: 18px 0;
+    color: rgba(240,240,232,255);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.nada{
+    width: 33%;
+}
+
+/*-- 1.1. Diseño del logo central --*/
+.logo{
+    width: 33%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 40%;
+}
+
+/*-- 1.3. Diseño del navegador --*/
+hr{
+    width: 95%;
+    height: 1px;
+    background-color: #8f859e;
+    border: none;
+}
+
+.contenedor-navegador{
+    padding: 10px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    transition: 0.1s;
+}
+
+.contenedor-navegador.abajo{
+    background-color: white;
+    padding: 15px 0;
+    box-shadow:  0 0 28px 0 #a1a1a1;
+}
+
+.navegador{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.navegador a{
+    color: #151515;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navegador a:hover{
+    color: #cc3917;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup {

@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="/css/signup.css">
     <title>Registro</title>
 </head>
 <body>
-    <div class="signup rojo">
-        <h1>Registro</h1>
-        <form action="#">
-            <div class="informacion">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="informacion">
-                <label for="apellido-paterno">Apellido Paterno:</label>
-                <input type="text" id="apellido-paterno" name="apellido-paterno" required>
-            </div>
-            <div class="informacion">
-                <label for="rut">RUT:</label>
-                <input type="text" id="rut" name="rut" required>
-            </div>
-            <div class="informacion">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Registrarse</button>
-        </form>
+    <div class="barra">
+        <div class="nada"></div>
+        <div class="logo">
+            <img src="image/logo1.png">
+        </div>
+        <div class="nada"></div>
     </div>
-    <div class="signup blanco">
-        <a onclick="window.history.back();">Atras</a>
-        <h1>Logo</h1>
-        <a href="login.html">Inicia sesión</a>
+    <hr>
+    <div class="contenedor-navegador">
+        <nav class="navegador sticky">
+            <a href="home.html"">Inicio</a>
+            <a href="room.html">Habitaciones</a>
+            <a href="about.html">Nosotros</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
     </div>
+    <hr>
+
+    
+    <main>
+        <div class="signup rojo">
+            <h1>Registro</h1>
+            <form action="#">
+                <div class="informacion">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="informacion">
+                    <label for="apellido-paterno">Apellido Paterno:</label>
+                    <input type="text" id="apellido-paterno" name="apellido-paterno" required>
+                </div>
+                <div class="informacion">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut" required>
+                </div>
+                <div class="informacion">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div class="signup blanco">
+            <a onclick="window.history.back();">Atras</a>
+            <h1>Logo</h1>
+            <a href="login.html">Inicia sesión</a>
+        </div>
+    </main>
 </body>
 </html>
