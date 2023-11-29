@@ -1,11 +1,11 @@
 body {
     margin: 0;
     height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
+/*-- 1. Diseño de la barra --*/
 .barra{
-    padding: 18px 0;
+    padding: 1.5em 0;
     color: rgba(240,240,232,255);
 
     display: flex;
@@ -26,7 +26,8 @@ body {
 }
 
 .logo img{
-    width: 40%;
+    width: 175px;
+    min-width: 175px;
 }
 
 /*-- 1.2. Diseño del boton para ir al login --*/
@@ -58,12 +59,13 @@ body {
 hr{
     width: 95%;
     height: 1px;
+    margin: 0;
     background-color: #8f859e;
     border: none;
 }
 
 .contenedor-navegador{
-    padding: 10px 0;
+    padding: 1.5em 0;
 
     position: sticky;
     top: 0;
@@ -74,7 +76,7 @@ hr{
 
 .contenedor-navegador.abajo{
     background-color: white;
-    padding: 15px 0;
+    padding: 1.5em 0;
     box-shadow:  0 0 28px 0 #a1a1a1;
 }
 
@@ -97,9 +99,16 @@ hr{
     color: #cc3917;
 }
 
+main{
+    margin: 5em 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
 .contenedor-titulo{
     width: 100%;
-    margin: 4em 0;
     padding: 1em 0;
     background-color: #e3e3e3;
 
@@ -140,11 +149,6 @@ hr{
     text-decoration: none;
     color: #cc3917;
     font-weight: bold;
-}
-
-.fin{
-    margin: 15em;
-    background-color: white;
 }
 
 /*-- . Diseño del pie de página --*/

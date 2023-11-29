@@ -2,12 +2,11 @@ body{
     width: 100%;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 /*-- 1. Diseño de la barra --*/
 .barra{
-    padding: 18px 0;
+    padding: 1.5em 0;
     color: rgba(240,240,232,255);
 
     display: flex;
@@ -28,7 +27,8 @@ body{
 }
 
 .logo img{
-    width: 40%;
+    width: 175px;
+    min-width: 175px;
 }
 
 /*-- 1.2. Diseño del boton para ir al login --*/
@@ -60,12 +60,13 @@ body{
 hr{
     width: 95%;
     height: 1px;
+    margin: 0;
     background-color: #8f859e;
     border: none;
 }
 
 .contenedor-navegador{
-    padding: 10px 0;
+    padding: 1.5em 0;
 
     position: sticky;
     top: 0;
@@ -76,7 +77,7 @@ hr{
 
 .contenedor-navegador.abajo{
     background-color: white;
-    padding: 15px 0;
+    padding: 1.5em 0;
     box-shadow:  0 0 28px 0 #a1a1a1;
 }
 
@@ -99,11 +100,17 @@ hr{
     color: #cc3917;
 }
 
+main{
+    margin: 5em 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
 /*-- 2. Diseño del buscador --*/
 .contenedor-buscador{
     width: 100%;
-    padding: 4em 0;
-    margin-bottom: 11em;
 
     display: flex;
     align-items: center;
@@ -184,7 +191,6 @@ input, select{
 
 .sesion-dos{
     width: 100%;
-    margin-bottom: 12em;
 
     display: flex;
     flex-flow: row;
@@ -217,16 +223,18 @@ input, select{
 }
 
 .circulitos{
-    width: 100%;
-    margin: 1em 0 0 2em;
-    padding: .4em;
+    width: inherit;
+    padding: 0;
+    margin: 0;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    gap: 0.5em;
 
-    transform: translateY(-4em)
+    position: absolute;
+    transform: translateY(-4em);
 }
 
 .circulitos li{
@@ -234,9 +242,8 @@ input, select{
 }
 
 .circulo{
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0 0.5em 0;
+    width: 1.8em;
+    height: 1.8em;
 
     border-radius: 50px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
@@ -254,7 +261,7 @@ input, select{
 .contenedor-texto{
     width: 28%;
     background-color: #e3e3e3;
-    margin: 0 8em 3.4em 0;
+    margin: 0 8em 0 0;
     
     box-sizing: border-box;
 
@@ -297,11 +304,6 @@ input, select{
     margin-right: 8em;
 }
 
-.fin{
-    margin: 15em;
-    background-color: white;
-}
-
 /*-- . Diseño del pie de página --*/
 footer{
     width: 100%;
@@ -315,4 +317,8 @@ footer{
 .horario .direccion{
     width: 19em;
     background-color: #cc3917;
+}
+
+@media only screen and (max-width: 767){ 
+    
 }
